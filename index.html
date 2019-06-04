@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num=parseInt(prompt('Nhập phần tử trong mảng'));
+    var count=0;
+    var x=0;
+    var array=[];
+    while(num<1)
+    {
+        num=parseInt(prompt('Nhập phần tử trong mảng'));
+    }
+    while (count!=num)
+    {
+        array[x]=prompt('Mời nhập phần tử '+(x+1));
+        x++;
+        count++;
+    }
+    function minArray(arr) {
+        let min = array[0];
+        for(var i = 1; i < array.length; i++){
+            if(array[i] < min){
+                min = array[i];
+            }
+        }
+        return min;
+    }
+    alert('số nhỏ nhất là '+ minArray());
+</script>
+</body>
+</html>
